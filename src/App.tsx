@@ -1,11 +1,8 @@
+import MainLayout from "components/layout/Main";
 import React from "react";
 
 const App: React.FC = () => {
-  return (
-    <div>
-      Tailwind <span className="text-green-500">installed</span>
-    </div>
-  );
+  return <MainLayout>Main Content</MainLayout>;
 };
 
 export default App;
