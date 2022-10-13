@@ -1,12 +1,12 @@
 import { BaseProps } from "components/consts/interface";
-import SliderMenu from "components/SliderMenu";
+import Sidebar from "components/Sidebar";
 import React from "react";
 
-const MainLayout: React.FC<BaseProps> = ({ className, children }) => {
+const MainLayout: React.FC<BaseProps> = ({ className = "", children }) => {
   return (
     <main className={`flex ${className}`}>
-      <SliderMenu />
-      <div>{children}</div>
+      <Sidebar />
+      <div className="ml-20">{children}</div>
     </main>
   );
 };

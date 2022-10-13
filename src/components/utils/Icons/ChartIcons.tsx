@@ -1,6 +1,4 @@
-import {
-  IconFunctionComponent,
-} from "components/consts/types";
+import { IconFunctionComponent } from "components/consts/types";
 
 export const AnalysIcon: IconFunctionComponent = ({
   className,
@@ -28,7 +26,7 @@ export const AnalysIcon: IconFunctionComponent = ({
       viewBox="0 0 24 24"
       strokeWidth={1.5}
       stroke="currentColor"
-      className={`w-6 h-6 ${className}`}
+      className={`w-6 h-6 stroke-gray-500 ${className}`}
     >
       <path
         strokeLinecap="round"
