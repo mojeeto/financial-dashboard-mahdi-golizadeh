@@ -1,25 +1,28 @@
 import { ReactFunctionComponent, MenuItemsIds } from "components/consts/types";
 import { MenuItems } from "components/consts/constants";
-import { useState } from "react";
+import { RootState, useAppDispatch } from "components/redux/store";
+import { useSelector } from "react-redux";
+import { setActiveItemMenu } from "components/redux/actions/MenuHandler";
 
 const Menu: ReactFunctionComponent = () => {
-  const [activeItemId, setActiveItemId] = useState<MenuItemsIds>("home");
+  const dispatch = useAppDispatch();
+  const { activeMenuItem: activeItemId } = useSelector((s: RootState) => s);
 
   const onClick = (item: MenuItemsIds) => {
-    setActiveItemId(item);
+    dispatch(setActiveItemMenu(item));
   };
 
   return (
-    <div className="flex flex-col justify-between h-full">
-      <div className="flex flex-col items-center">
+    <div className="flex lg:flex-col justify-between lg:h-full">
+      <div className="lg:flex flex-col items-center hidden">
         <h4 className="text-gray-500 my-4 text-xs">Menu</h4>
         <div className="flex flex-col gap-2">
           {MenuItems.top.map((item, index) => {
             return (
               <div
                 className={`text-gray-500 cursor-pointer p-2 rounded-lg transition-colors ${activeItemId === item.id
-                  ? "bg-[#3D4845] text-emerald-500"
-                  : ""
+                    ? "bg-[#3D4845] text-emerald-500"
+                    : ""
                   }`}
                 key={index}
                 onClick={() => onClick(item.id as MenuItemsIds)}
@@ -30,7 +33,7 @@ const Menu: ReactFunctionComponent = () => {
           })}
         </div>
       </div>
-      <div className="flex flex-col items-center gap-2">
+      <div className="flex lg:flex-col items-center gap-2">
         {MenuItems.bottom.map((item, index) => {
           return (
             <div
