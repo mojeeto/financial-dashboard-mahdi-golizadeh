@@ -9,7 +9,9 @@ const MainLayout: React.FC<BaseProps> = ({ className = "", children }) => {
       <Sidebar />
       <div className="lg:ml-20 flex flex-col w-full">
         <Header />
-        {children}
+        <div className="bg-[#F2F4F3] dark:bg-[#232323] dark:text-gray-100">
+          {children}
+        </div>
       </div>
     </main>
   );
