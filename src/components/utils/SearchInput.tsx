@@ -15,7 +15,7 @@ const SearchInput: React.FC = () => {
       </div>
       <div className="md:flex gap-2 items-center hidden">
         <div className="h-3 w-[1.5px] bg-gray-300"></div>
-        <div className="cursor-pointer hover:bg-gray-200 rounded-full transition-colors p-1">
+        <div className="cursor-pointer hover:bg-gray-200 dark:hover:bg-[#4c4c4c] rounded-full transition-colors p-1">
           <AdjustmentsIcon className="text-gray-400 dark:text-gray-200" />
         </div>
       </div>
