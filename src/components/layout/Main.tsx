@@ -5,11 +5,13 @@ import React from "react";
 
 const MainLayout: React.FC<BaseProps> = ({ className = "", children }) => {
   return (
-    <main className={`flex flex-col lg:flex-row ${className}`}>
+    <main className={`flex flex-col lg:flex-row`}>
       <Sidebar />
       <div className="lg:ml-20 flex flex-col w-full">
         <Header />
-        <div className="bg-[#F2F4F3] dark:bg-[#232323] dark:text-gray-100">
+        <div
+          className={`bg-[#F2F4F3] dark:bg-[#232323] dark:text-gray-100 p-5 ${className}`}
+        >
           {children}
         </div>
       </div>
