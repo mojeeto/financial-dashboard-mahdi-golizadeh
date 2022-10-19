@@ -1,7 +1,7 @@
 import React from "react";
 import MasterCardLogo from "./MasterCardLogo";
 
-const DeptCard: React.FC = () => {
+const CreditCard: React.FC = () => {
   return (
     <div className="w-full bg-gray-100 rounded-t-xl flex flex-col pt-4 pb-3 dark:bg-[#232323]">
       <div className="h-7 bg-zinc-300 dark:bg-[#4c4c4c]"></div>
@@ -13,4 +13,4 @@ const DeptCard: React.FC = () => {
   );
 };
 
-export default DeptCard;
+export default CreditCard;

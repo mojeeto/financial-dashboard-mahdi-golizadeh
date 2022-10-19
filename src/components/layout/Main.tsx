@@ -5,7 +5,7 @@ import React from "react";
 
 const MainLayout: React.FC<BaseProps> = ({ className = "", children }) => {
   return (
-    <main className={`flex flex-col lg:flex-row`}>
+    <main className={`flex flex-col lg:flex-row dark:bg-[#232323]`}>
       <Sidebar />
       <div className="lg:ml-20 flex flex-col w-full">
         <Header />
