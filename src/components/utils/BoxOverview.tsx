@@ -9,8 +9,8 @@ interface BoxOverviewProps {
 
 const BoxOverview: React.FC<BoxOverviewProps> = ({ title, price, image }) => {
   return (
-    <div className="bg-emerald-50 dark:bg-emerald-200 border-[1px] border-gray-200 dark:border-[#4c4c4c] rounded-xl flex lg:flex-col p-5 w-full items-center lg:items-start lg:w-[180px] lg:h-[150px] m-2.5 justify-between dark:text-black">
-      <div className="flex items-center justify-between lg:w-full">
+    <div className="bg-emerald-50 dark:bg-emerald-200 border-[1px] border-gray-200 dark:border-[#4c4c4c] rounded-2xl flex lg:flex-col p-5 w-full items-center lg:items-start justify-between dark:text-black lg:gap-12">
+      <div className="flex items-center justify-between lg:w-full lg:gap-20">
         <div className="p-2 border-[1px] border-gray-200 rounded-lg bg-white text-emerald-400">
           {image}
         </div>
