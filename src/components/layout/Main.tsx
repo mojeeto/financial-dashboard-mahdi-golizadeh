@@ -10,7 +10,7 @@ const MainLayout: React.FC<BaseProps> = ({ className = "", children }) => {
       <div className="lg:ml-20 flex flex-col w-full">
         <Header />
         <div
-          className={`bg-[#F2F4F3] dark:bg-[#232323] dark:text-gray-100 p-5 ${className}`}
+          className={`flex flex-col gap-10 bg-[#F2F4F3] dark:bg-[#232323] dark:text-gray-100 p-5 ${className}`}
         >
           {children}
         </div>
