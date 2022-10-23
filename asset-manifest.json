@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/static/css/main.47a0e499.css",
-    "main.js": "/static/js/main.6132fc97.js",
-    "index.html": "/index.html",
-    "main.47a0e499.css.map": "/static/css/main.47a0e499.css.map",
-    "main.6132fc97.js.map": "/static/js/main.6132fc97.js.map"
+    "main.css": "/financial-dashboard-mahdi-golizadeh/static/css/main.47a0e499.css",
+    "main.js": "/financial-dashboard-mahdi-golizadeh/static/js/main.6132fc97.js",
+    "index.html": "/financial-dashboard-mahdi-golizadeh/index.html",
+    "main.47a0e499.css.map": "/financial-dashboard-mahdi-golizadeh/static/css/main.47a0e499.css.map",
+    "main.6132fc97.js.map": "/financial-dashboard-mahdi-golizadeh/static/js/main.6132fc97.js.map"
   },
   "entrypoints": [
     "static/css/main.47a0e499.css",
